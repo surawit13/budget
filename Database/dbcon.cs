@@ -7,13 +7,13 @@ using dotnetcore.Models;
 
 namespace dotnetcore.Dbcon
 {
-    public class Dbcon : DbContext
+    public class Dbconnect : DbContext
     {
-        public Dbcon (DbContextOptions<Dbcon> options)
+        public Dbconnect (DbContextOptions<Dbconnect> options)
             : base(options)
         {
         }
 
-        public DbSet<dotnetcore.Models.User> User { get; set; }
+        public DbSet<User> User { get; set; }
     }
 }

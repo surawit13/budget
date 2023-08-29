@@ -1,7 +1,9 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Globalization;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using dotnetcore.Models;
-
+using dotnetcore.Dbcon;
 namespace dotnetcore.Controllers;
 
 public class HomeController : Controller

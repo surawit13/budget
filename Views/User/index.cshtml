@@ -1,0 +1,15 @@
+@page
+@model dotnetcore.Models.User
+@{
+    ViewData["Title"] = "index";
+}
+
+<h1>@ViewData["Title"]</h1>
+@foreach (var item in Model.data)
+{
+    <label asp-for="@item.first_name" class="control-label"> </label>
+    <input asp-for="@item.last_name" class="form-control" />
+}
+<div>
+    
+</div>
